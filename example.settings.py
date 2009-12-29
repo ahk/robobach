@@ -1,4 +1,5 @@
 # Django settings for robobach project.
+# MAKE YOUR OWN COPY OF THIS named settings.py
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
