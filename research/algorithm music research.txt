@@ -1,0 +1,11 @@
+http://en.wikipedia.org/wiki/Algorithmic_composition#Evolutionary_methods
+http://en.wikipedia.org/wiki/Band-in-a-Box
+    http://upload.wikimedia.org/wikipedia/en/7/71/BiaB(django).ogg
+
+Potential python music generating libraries:
+    http://github.com/jtauber/sebastian/
+    http://github.com/thejoshwolfe/PyComposer/
+    http://github.com/jcbozonier/MarkovMusic/
+    
+music creation implementations:
+    super collider
