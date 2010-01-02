@@ -1,4 +1,5 @@
 http://en.wikipedia.org/wiki/Algorithmic_composition#Evolutionary_methods
+http://en.wikipedia.org/wiki/Stochastic_context-free_grammar
 http://en.wikipedia.org/wiki/Band-in-a-Box
     http://upload.wikimedia.org/wikipedia/en/7/71/BiaB(django).ogg
 
