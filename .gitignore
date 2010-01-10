@@ -1,3 +1,7 @@
 *.DS_Store
 *.pyc
 settings.py
+*.aiff
+*.osc
+*.wav
+*.mp3
