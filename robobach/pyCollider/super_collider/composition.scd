@@ -1,3 +1,6 @@
+// see this doc for a starting point:
+// http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/build/Help/Control/Score.html
+
 // currently we can't get at the newly defined synths. there is something OSC can do, like
 // \d_load, <path-to-synth> that I oughta check on before ruling out synth defining
 
@@ -15,9 +18,5 @@ g = [
 	[1, [\c_set, 0, 0]] // finish
 ];
 
-f = File("score-test","w");
-f.write(g.asCompileString);
-f.close;
-
 //convert it to a binary OSC file for use with NRT
-Score.writeFromFile("score-test", "test.osc");
+Score.write(g, "composition.osc");
