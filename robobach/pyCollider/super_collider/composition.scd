@@ -20,3 +20,4 @@ g = [
 
 //convert it to a binary OSC file for use with NRT
 Score.write(g, "composition.osc");
+"composition successfully compiled".postln;
