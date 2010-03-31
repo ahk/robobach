@@ -15,7 +15,11 @@ while not re.search(terminating_pat, client_out):
     client_out += client_proc.stdout.readline()
 client_proc.kill()
 
-outcmd = './scsynth -N composition.osc _ ' + now + '.composition.wav 44100 WAVE int16'
+outfile_name = now + '.composition'
+outcmd = './scsynth -o 2 -N composition.osc _ %(out)s 44100 WAVE int16' % {'out': outfile_name + '.wav'}
 server_proc = Popen(outcmd, shell=True)
-
 server_proc.wait()
+
+lamecmd = 'lame --preset extreme %(in)s %(out)s' % {'in': outfile_name + '.wav', 'out': outfile_name + '.mp3' }
+lame_encode = Popen(lamecmd, shell=True)
+lame_encode.wait()
